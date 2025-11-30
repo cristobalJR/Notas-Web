@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quick N0tS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <style>
+      .note {
+        border: solid;
+        padding: 5px;
+        margin-top: 5px;
+        display: -webkit-box; /* igual hay que hacer uno para el titulo y otro para el contenido */
+        -webkit-line-clamp: 5; /* número de líneas */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .note-link {
+        text-decoration: none;
+        /*  color de texto se hereda para las notas */
+        color: inherit;
+        /*link ocupa todo el espacio disponible en su columna */
+        display: block;
+      }
+      .note-link:hover {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+        
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+        transition: all 0.2s ease-in-out;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <h1>Quick N0tS</h1>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <button id="themeToggleBtn" class="btn btn-dark">🌙</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <a target="_self" href="createNote.html">
+            <button type="submit" id="newNoteBtn" class="btn btn-primary">
+              + Nueva Nota
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="notesContainer" class="container">
+      <div class="row">
+        <!-- Nota 1  -->
+        <div class="col-xs-12 col-sm-4">
+          <a href="detail.html" target="_self" class="note-link">
+            <div class="note">
+              <h3 class="note-title">Título</h3>
+              <p class="note-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                vel maxime sunt cupiditate consectetur in similique quidem esse
+                eaque odio possimus illum velit minus at ipsam, ducimus, soluta
+                voluptatibus ipsa?
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Nota 2  -->
+        <div class="col-xs-12 col-sm-4">
+          <a href="detail.html" target="_self" class="note-link">
+            <div class="note">
+              <h3 class="note-title">Título</h3>
+              <p class="note-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                vel maxime sunt cupiditate consectetur in similique quidem esse
+                eaque odio possimus illum velit minus at ipsam, ducimus, soluta
+                voluptatibus ipsa?
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Nota 3  -->
+        <div class="col-xs-12 col-sm-4">
+          <a href="detail.html" target="_self" class="note-link">
+            <div class="note">
+              <h3 class="note-title">Título</h3>
+              <p class="note-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                vel maxime sunt cupiditate consectetur in similique quidem esse
+                eaque odio possimus illum velit minus at ipsam, ducimus, soluta
+                voluptatibus ipsa?
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Nota 4  -->
+        <div class="col-xs-12 col-sm-4">
+          <a href="detail.html" target="_self" class="note-link">
+            <div class="note">
+              <h3 class="note-title">Título</h3>
+              <p class="note-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                vel maxime sunt cupiditate consectetur in similique quidem esse
+                eaque odio possimus illum velit minus at ipsam, ducimus, soluta
+                voluptatibus ipsa?
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Nota 5  -->
+        <div class="col-xs-12 col-sm-4">
+          <a href="detail.html" target="_self" class="note-link">
+            <div class="note">
+              <h3 class="note-title">Título</h3>
+              <p class="note-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                vel maxime sunt cupiditate consectetur in similique quidem esse
+                eaque odio possimus illum velit minus at ipsam, ducimus, soluta
+                voluptatibus ipsa?
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Nota 6  -->
+        <div class="col-xs-12 col-sm-4">
+          <a href="detail.html" target="_self" class="note-link">
+            <div class="note">
+              <h3 class="note-title">Título</h3>
+              <p class="note-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                vel maxime sunt cupiditate consectetur in similique quidem esse
+                eaque odio possimus illum velit minus at ipsam, ducimus, soluta
+                voluptatibus ipsa?
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Nota 7  -->
+        <div class="col-xs-12 col-sm-4">
+          <a href="detail.html" target="_self" class="note-link">
+            <div class="note">
+              <h3 class="note-title">Título</h3>
+              <p class="note-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                vel maxime sunt cupiditate consectetur in similique quidem esse
+                eaque odio possimus illum velit minus at ipsam, ducimus, soluta
+                voluptatibus ipsa?
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Nota 8  -->
+        <div class="col-xs-12 col-sm-4">
+          <a href="detail.html" target="_self" class="note-link">
+            <div class="note">
+              <h3 class="note-title">Título</h3>
+              <p class="note-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                vel maxime sunt cupiditate consectetur in similique quidem esse
+                eaque odio possimus illum velit minus at ipsam, ducimus, soluta
+                voluptatibus ipsa?
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Nota 9  -->
+        <div class="col-xs-12 col-sm-4">
+          <a href="detail.html" target="_self" class="note-link">
+            <div class="note">
+              <h3 class="note-title">Título</h3>
+              <p class="note-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                vel maxime sunt cupiditate consectetur in similique quidem esse
+                eaque odio possimus illum velit minus at ipsam, ducimus, soluta
+                voluptatibus ipsa?
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container">
+      <div class="row">
+        <div class="col-8"></div>
+        <div class="col">
+          <p>Getting over it</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

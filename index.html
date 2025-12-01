@@ -11,28 +11,25 @@
       crossorigin="anonymous"
     />
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
-   
   </head>
 
   <body>
-    <header class="container">
-      <div class="row">
-        <div class="col d-flex justify-content-center">
-          <h1>Quick N0tS</h1>
+    <header>
+      <nav class="container-fluid">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <h1>Quick N0tS</h1>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <button class="btn btn-dark">🌙</button>
+          </div>
         </div>
-        <div class="col d-flex justify-content-center">
-          <button id="themeToggleBtn" class="btn btn-dark">🌙</button>
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <a class="btn btn-primary" href="createNote.html"> + Nueva Nota </a>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col d-flex justify-content-center">
-          <a target="_self" href="createNote.html">
-            <button type="submit" id="newNoteBtn" class="btn btn-primary">
-              + Nueva Nota
-            </button>
-          </a>
-        </div>
-      </div>
+      </nav>
     </header>
 
     <main id="notesContainer" class="container">
@@ -176,11 +173,13 @@
       </div>
     </main>
 
-    <footer class="container">
-      <div class="row">
-        <div class="col-8"></div>
-        <div class="col">
-          <p>Getting over it</p>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-8"></div>
+          <div class="col">
+            <p>Getting over it</p>
+          </div>
         </div>
       </div>
     </footer>

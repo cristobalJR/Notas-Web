@@ -5,7 +5,8 @@
   <title>Quick N0tS</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link type="text/css" rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,58 +17,94 @@
         <h1>Quick N0tS</h1>
       </div>
       <div class="col d-flex justify-content-center">
-        <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
+        <button class="btn btn-dark">🌙</button>
       </div>
     </div>
     <div class="row">
       <div class="col d-flex justify-content-center">
-        <a target="_self" href="createNote.html">
-          <button type="submit" id="newNoteBtn" class="new-note-btn">+ Nueva Nota</button>
-        </a> <!-- igual meter esto dentro de un nav con el resto de botones de navegación -->
-        
+        <a class="btn btn-primary" href="index.html">Todas las Notas</a>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <a class="btn btn-primary" href="createNote.html">
+          + Nueva Nota
+        </a>
       </div>
     </div>
   </header>
 
-<div class="dialog-content">
-      <div class="dialog-header">
-        <h2 class="dialog-title" id="dialogTitle">Add New Note</h2>
-      </div>
+  <div class="dialog-content">
+    <div class="dialog-header">
 
-      <form id="noteForm">
-        <div class="form-group">
-          <label for="noteTitle" class="form-label">Title</label>
-          <input type="text" id="noteTitle" class="form-input" placeholder="Enter note title..."/>
-        </div>
-
-        <div class="form-group">
-          <label for="noteContent" class="form-label">Content</label>
-          <textarea id="noteContent" class="form-textarea" placeholder="Write your note here..." required></textarea>
-        </div>
-        <div class="form-group">
-          <label for="noteContent" class="form-label">Imagen</label>
-          <textarea id="noteContent" class="form-textarea" placeholder="Write your note here..." required></textarea>
-        </div>
-        <div class="form-group">
-          <label for="noteTitle" class="form-label">Dificultad</label>
-          <label><input type="radio" value="1" id="noteDif" name="diff" class="form-input"/>1</label> 
-          <label><input type="radio" value="2" id="noteDif" name="diff" ñclass="form-input"/>2</label>
-          <label><input type="radio" value="3" id="noteDif" name="diff" class="form-input"/>3</label>
-          <label><input checked type="radio" value="desconocida" id="noteDif" name="diff" class="form-input"/>Desconocida</label>
-        </div>
-        <div class="form-group">
-          <label><input type="checkbox" value="instrumental">Tiene Instrumental
-        </div></label> <!-- si se marca que se abra un formulario para subir el mp3-->
-
-        
-        <div class="dialog-actions">
-          <button type="button" class="cancel-btn" onclick="closeNoteDialog()">
-            Cancel
-          </button>
-          <button type="submit" class="save-btn">Save Note</button>
-        </div>
-      </form>
     </div>
+
+
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10 note-container border rounded">
+        <div class="row">
+          <div class="col">
+            <div class="note-detail-title text-center">
+              <h2 class="dialog-title">Add New Note</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="notes-form text-center">
+              <form id="noteForm">
+                <div class="form-group">
+                  <label for="noteTitle" class="form-label">Title</label>
+                  <input type="text" id="noteTitle" name="title" class="form-input" placeholder="Enter note title..." />
+                </div>
+
+                <div class="form-group">
+                  <label for="noteContent" class="form-label">Content</label>
+                  <textarea id="noteContent" class="form-textarea" placeholder="Write your note here..."
+                    required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="noteImage" class="form-label">Imagen</label>
+                  <textarea id="noteImage" class="form-textarea" placeholder="Image Link here..."
+                    required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="noteDiff" class="form-label">Dificultad</label>
+                  <label><input type="radio" value="1" id="noteDif1" name="diff" class="form-input" />1</label>
+                  <label><input type="radio" value="2" id="noteDif2" name="diff" class="form-input" />2</label>
+                  <label><input type="radio" value="3" id="noteDif3" name="diff" class="form-input" />3</label>
+                  <label><input checked type="radio" value="desconocida" id="noteDif" name="diff"
+                      class="form-input" />Desconocida</label>
+                </div>
+                <div class="form-group">
+                  <label><input type="checkbox" value="instrumental" name="instrum" >Tiene Instrumental</label>
+                </div> <!-- si se marca que se abra un formulario para subir el mp3-->
+
+
+                <div class="dialog-actions">
+                  <button type="button" class="cancel-btn" onclick="closeNoteDialog()">
+                    Cancel
+                  </button>
+                  <button type="submit" class="save-btn">Save Note</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center">
+            <div id="noteComments">
+              <button class="new-comment-btn">Crear Comentario</button>
+            </div>
+            <!--la caja de comentarios hacerla con un container d-flex de boostrap con el eje en columna para poner uno encima del otro-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="container">
     <div class="row">
@@ -77,7 +114,7 @@
       </div>
     </div>
   </footer>
-  
+
 </body>
 
 </html>

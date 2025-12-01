@@ -45,6 +45,9 @@
 }
 
 .note {
+  background-color: var(--surface-color) !important;
+  border: 1px solid var(--surface-color) !important;
+  border-radius: 0,75rem;
   border: solid;
   padding: 5px;
   margin-top: 5px;
@@ -57,6 +60,7 @@
 }
 
 .note-link {
+  
   text-decoration: none;
   /*  color de texto se hereda para las notas */
   color: inherit;
@@ -77,7 +81,7 @@
 body {
   font-family: Poppins, sans-serif;
   margin: 2rem;
-  background: var(--base-color);
+  background: var(--base-color)!important;
   color: var(--text-color);
 }
 header {
@@ -91,6 +95,11 @@ footer {
   color: var(--text-color);
 }
 
+.details{
+  background-color: var(--surface-color) !important;
+  border: 1px solid var(--surface-color) !important;
+  border-radius: 0,75rem;
+}
 
 .note-card {
   background-color: aqua;

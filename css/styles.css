@@ -54,6 +54,7 @@
   display: -webkit-box;
   /* igual hay que hacer uno para el titulo y otro para el contenido */
   -webkit-line-clamp: 5;
+  line-clamp: 5;
   /* número de líneas */
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -89,27 +90,13 @@ header {
   color: var(--text-color);
 }
 footer {
-  margin-top: 1rem;
+  padding: 1rem;
   background: var(--secondary-color);
   color: var(--text-color);
 }
 
-.details{
+.surfaces{
   background-color: var(--surface-color) !important;
-  border: 1px solid var(--surface-color) !important;
-  border-radius: 0,75rem;
-}
-
-.note-card {
-  background-color: aqua;
-}
-
-.note-card button {
-  background-color: aqua;
-  width: 100%;
-  height: 100%;
-}
-
-.note-container {
-  background-color: blue;
+  margin: 0.5rem;
+  padding:0.5rem
 }

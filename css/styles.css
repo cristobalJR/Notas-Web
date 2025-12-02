@@ -10,9 +10,7 @@
 
 :root {
   --bs-primary: #8b90ff;
-  /* tu color */
-  --bs-primary-rgb: 255, 87, 51;
-  /* mismo color en RGB */
+  --bs-primary-rgb: 139,144,255;
   --brand-color: #8b90ff;
   --base-color: #f2f4f8;
   --surface-color: #fff;
@@ -47,8 +45,7 @@
 .note {
   background-color: var(--surface-color) !important;
   border: 1px solid var(--surface-color) !important;
-  border-radius: 0,75rem;
-  border: solid;
+  border-radius: 0.75rem;
   padding: 5px;
   margin-top: 5px;
   
@@ -68,6 +65,7 @@
   color: inherit;
   /*link ocupa todo el espacio en su columna */
   display: block;
+  transition: all 0.2s ease-in-out;
 }
 
 .note-link:hover {
@@ -77,12 +75,11 @@
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
-  transition: all 0.2s ease-in-out;
 }
 
 body {
   font-family: Poppins, sans-serif;
-  background: var(--base-color)!important;
+  background: var(--base-color);
   color: var(--text-color);
   display: flex; 
   flex-direction: column; /*los hijos header contenido footer en columna */
@@ -100,10 +97,8 @@ footer {
 }
 
 .surfaces{
-  background-color: var(--surface-color) !important;
   margin: 0.5rem;
   padding:0.5rem;
-  width: 100%;
 }
 
 .main-content {

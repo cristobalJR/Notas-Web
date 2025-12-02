@@ -14,36 +14,33 @@
   </head>
 
   <body>
-  <header>
-  <div class="container-fluid">
-    
-    <div class="row align-items-center">
-      <div class="col d-flex justify-content-center">
-        <h1>Quick N0tS</h1>
+    <header>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col d-flex justify-content-center">
+            <h1>Quick N0tS</h1>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <button class="btn btn-dark">🌙</button>
+          </div>
+        </div>
+
+        <nav class="navbar navbar-expand justify-content-center mt-2">
+          <ol class="navbar-nav">
+            <li class="nav-item mx-2">
+              <a class="btn btn-primary" href="index.html">Todas las Notas</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="btn btn-primary" href="createNote.html">+ Nueva Nota</a>
+            </li>
+          </ol>
+        </nav>
       </div>
-      <div class="col d-flex justify-content-center">
-        <button class="btn btn-dark">🌙</button>
-      </div>
-    </div>
+    </header>
 
-    <nav class="navbar navbar-expand justify-content-center mt-2">
-      <ol class="navbar-nav">
-        <li class="nav-item mx-2">
-          <a class="btn btn-primary" href="index.html">Todas las Notas</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="btn btn-primary" href="createNote.html">+ Nueva Nota</a>
-        </li>
-        
-      </ol>
-    </nav>
-
-  </div>
-</header>
-
-    <div class="container main-content">
+    <div class="container  main-content">
       <div class="row w-100 justify-content-center">
-        <div class="surfaces col-10 border rounded">
+        <div class="surfaces card shadow p-4 col-10 border rounded">
           <div class="row">
             <div class="col">
               <div class="note-detail-title text-center">
@@ -51,7 +48,6 @@
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col">
               <div class="notes-form text-center">
@@ -71,6 +67,7 @@
                     <label for="noteContent" class="form-label">Content</label>
                     <textarea
                       id="noteContent"
+                      name="content"
                       class="form-textarea"
                       placeholder="Write your note here..."
                       required
@@ -80,6 +77,7 @@
                     <label for="noteImage" class="form-label">Imagen</label>
                     <textarea
                       id="noteImage"
+                      name="image"
                       class="form-textarea"
                       placeholder="Image Link here..."
                       required
@@ -125,6 +123,7 @@
                       />Desconocida</label
                     >
                   </div>
+                  
                   <div class="form-group">
                     <label
                       ><input
@@ -135,6 +134,17 @@
                     >
                   </div>
                   <!-- si se marca que se abra un formulario para subir el mp3-->
+
+                  <div class="row">
+                    <div class="col text-center">
+                      <div id="noteComments">
+                        <button class="new-comment-btn">
+                          Crear Comentario
+                        </button>
+                      </div>
+                      <!--la caja de comentarios hacerla con un container d-flex de boostrap con el eje en columna para poner uno encima del otro-->
+                    </div>
+                  </div>
 
                   <div class="dialog-actions">
                     <button
@@ -148,15 +158,6 @@
                   </div>
                 </form>
               </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col text-center">
-              <div id="noteComments">
-                <button class="new-comment-btn">Crear Comentario</button>
-              </div>
-              <!--la caja de comentarios hacerla con un container d-flex de boostrap con el eje en columna para poner uno encima del otro-->
             </div>
           </div>
         </div>

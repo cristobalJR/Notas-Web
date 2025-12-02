@@ -51,6 +51,7 @@
   border: solid;
   padding: 5px;
   margin-top: 5px;
+  
   display: -webkit-box;
   /* igual hay que hacer uno para el titulo y otro para el contenido */
   -webkit-line-clamp: 5;
@@ -63,9 +64,9 @@
 .note-link {
   
   text-decoration: none;
-  /*  color de texto se hereda para las notas */
+  /* color de texto se hereda para las notas */
   color: inherit;
-  /*link ocupa todo el espacio disponible en su columna */
+  /*link ocupa todo el espacio en su columna */
   display: block;
 }
 
@@ -83,6 +84,9 @@ body {
   font-family: Poppins, sans-serif;
   background: var(--base-color)!important;
   color: var(--text-color);
+  display: flex; 
+  flex-direction: column; /*los hijos header contenido footer en columna */
+  min-height: 100vh;
 }
 header {
   padding: 1rem;
@@ -98,5 +102,16 @@ footer {
 .surfaces{
   background-color: var(--surface-color) !important;
   margin: 0.5rem;
-  padding:0.5rem
+  padding:0.5rem;
+  width: 100%;
 }
+
+.main-content {
+    flex-grow: 1; /* contenedor toma todo el espacio restante */
+    display: flex; 
+    align-items: center; /*verticalmente */
+    justify-content: center;
+  
+}
+.mainContainer {
+    flex-grow: 1;}

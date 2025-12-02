@@ -50,6 +50,9 @@
   border-color: #6e74ff !important;
 }
 
+.delete:hover{
+  color: #191b23;
+}
 
 .note {
   background-color: var(--surface-color) !important;
@@ -111,12 +114,33 @@ footer {
 }
 
 .main-content {
-    flex-grow: 1; /* contenedor toma todo el espacio restante */
-    display: flex; 
-    align-items: center; /*verticalmente */
-    justify-content: center;
+  flex-grow: 1; /* contenedor toma todo el espacio restante */
+  display: flex; 
+  align-items: center; /*verticalmente */
+  justify-content: center;
   
 }
 .mainContainer {
-    flex-grow: 1;
-  }
+  flex-grow: 1;
+}
+
+
+.note-content{
+  max-width: 95%;
+  justify-self:center;
+}
+.note-detail-options{
+  justify-self:end;
+  max-width: 95%;
+}
+.detail-options{
+  align-items: start;
+}
+.instrumental-info{
+  align-items: center;
+}
+.instrumental-image{
+  justify-self:center;
+  width: 150px;
+  max-width: 100%;
+}

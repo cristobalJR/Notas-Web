@@ -137,10 +137,14 @@ footer {
   align-items: start;
 }
 .instrumental-info{
-  align-items: center;
+  
+
 }
 .instrumental-image{
   justify-self:center;
   width: 150px;
   max-width: 100%;
+}
+.instrumental-options{
+  transform: translateY(-35px);
 }

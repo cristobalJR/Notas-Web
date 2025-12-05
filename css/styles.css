@@ -153,13 +153,12 @@ footer {
 
 .comentarios .col-3 {
   gap: 6px;
-  align-items: center;
 }
 
 .comentarios .col-3 .btn {
   
   max-width: 50%;
-  padding: 4px 6px;
+  padding: 5px 6px;
 
   /* el svg se centra vertical y horizontalmente */
   display: flex;

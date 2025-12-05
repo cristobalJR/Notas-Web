@@ -148,3 +148,29 @@ footer {
 .instrumental-options{
   transform: translateY(-35px);
 }
+
+
+
+.comentarios .col-3 {
+  gap: 6px;
+  align-items: center;
+}
+
+.comentarios .col-3 .btn {
+  
+  max-width: 50%;
+  padding: 4px 6px;
+
+  /* el svg se centra vertical y horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.comentarios .col-3 .btn svg {
+  
+  flex-shrink: 0;  /* no decrece cuando btn se hace pequeño */
+}
+

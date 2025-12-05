@@ -173,3 +173,22 @@ footer {
   flex-shrink: 0;  /* no decrece cuando btn se hace pequeño */
 }
 
+
+.instrumental-buttons{
+  gap: 6px;
+}
+
+
+
+.hover-info .info-text {
+  opacity: 0;
+  margin: 5px 0 0;
+  text-align: center;
+  font-weight: bold;
+  color: #ffc107;
+  transition: opacity 0.3s ease;
+}
+
+.hover-info:hover .info-text {
+  opacity: 1;
+}

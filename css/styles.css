@@ -59,7 +59,6 @@
   border: 1px solid var(--surface-color) !important;
   border-radius: 0.75rem;
   padding: 5px;
-  margin-top: 5px;
   
   display: -webkit-box;
   /* igual hay que hacer uno para el titulo y otro para el contenido */

@@ -93,7 +93,7 @@ body {
   color: var(--text-color);
   display: flex; 
   flex-direction: column; /*los hijos header contenido footer en columna */
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 header {
   padding: 1rem;
@@ -101,9 +101,8 @@ header {
   color: var(--text-color);
 }
 footer {
-  padding: 1rem;
   background: var(--secondary-color);
-  color: var(--text-color);
+  color: var(--base-color);
 }
 
 
@@ -113,15 +112,13 @@ footer {
 }
 
 .main-content {
-  flex-grow: 1; /* contenedor toma todo el espacio restante */
+  
   display: flex; 
   align-items: center; /*verticalmente */
   justify-content: center;
   
 }
-.mainContainer {
-  flex-grow: 1;
-}
+
 
 
 .note-content{

@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Quick N0tS</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link type="text/css" rel="stylesheet" href="css/styles.css" />
-  </head>
 
-  <body>
-    <header>
-    <div class="container-fluid py-2">
+<head>
+  <title>Quick N0tS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link type="text/css" rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid pt-2">
       <div class="row align-items-center">
         <div class="col-12 col-sm-8 text-center text-sm-start">
-          <img src="image.png" class="img-fluid w-100" alt="Logo" />
+          <img src="image.png" class="img-fluid thebanner w-100" alt="Logo" />
         </div>
 
         <div class="col-12 col-sm-4 d-flex justify-content-center justify-content-sm-end mt-2 mt-sm-0">
@@ -27,8 +24,7 @@
           </button>
         </div>
       </div>
-
-      <nav class="navbar navbar-expand justify-content-center mt-3">
+      <nav class="navbar navbar-expand justify-content-center">
         <ol class="navbar-nav">
           <li class="nav-item mx-2">
             <a class="btn btn-primary" title="Todas las Notas" href="index.html"><svg xmlns="http://www.w3.org/2000/svg"
@@ -54,134 +50,82 @@
     </div>
   </header>
 
-    <div class="container main-content">
-      <div class="row w-100 justify-content-center">
-        <div class="surfaces card shadow p-4 col-10 border rounded">
-          <div class="row">
-            <div class="col">
-              <div class="note-detail-title text-center">
-                <h1 class="dialog-title">Add New Note</h1>
-              </div>
+  <div class="container main-content">
+    <div class="row w-100 justify-content-center">
+      <div class="surfaces card shadow p-4 col-10 border rounded">
+        <div class="row">
+          <div class="col">
+            <div class="note-detail-title text-center">
+              <h1 class="dialog-title">Add New Note</h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="notes-form text-center">
-                <form id="noteForm">
-                  <div class="form-group">
-                    <label for="noteTitle" class="form-label">Title</label>
-                    <input
-                      type="text"
-                      id="noteTitle"
-                      name="title"
-                      class="form-control mb-1"
-                    />
-                  </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="notes-form text-center">
+              <form id="noteForm">
+                <div class="form-group">
+                  <label for="noteTitle" class="form-label">Title</label>
+                  <input type="text" id="noteTitle" name="title" class="form-control mb-1" />
+                </div>
 
-                  <div class="form-group">
-                    <label for="noteContent" class="form-label">Content</label>
-                    <textarea
-                      id="noteContent"
-                      name="content"
-                      class="form-control mb-1"
-                      rows="3"
-                    ></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for="noteImage" class="form-label">Imagen</label>
-                    <input
-                      type="url"
-                      class="form-control mb-3"
-                      id="noteImage"
-                      name="image"
-                      placeholder="https://example.com/imagen.jpg"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="noteDiff" class="form-label">Dificultad:</label>
-                    <label
-                      ><input
-                        type="radio"
-                        value="1"
-                        id="noteDif1"
-                        name="diff"
-                        class="form-input"
-                      />1</label
-                    >
-                    <label
-                      ><input
-                        type="radio"
-                        value="2"
-                        id="noteDif2"
-                        name="diff"
-                        class="form-input"
-                      />2</label
-                    >
-                    <label
-                      ><input
-                        type="radio"
-                        value="3"
-                        id="noteDif3"
-                        name="diff"
-                        class="form-input"
-                      />3</label
-                    >
-                    <label
-                      ><input
-                        checked
-                        type="radio"
-                        value="desconocida"
-                        id="noteDif"
-                        name="diff"
-                        class="form-input"
-                      />Desconocida</label
-                    >
-                  </div>
+                <div class="form-group">
+                  <label for="noteContent" class="form-label">Content</label>
+                  <textarea id="noteContent" name="content" class="form-control mb-1" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="noteImage" class="form-label">Imagen</label>
+                  <input type="url" class="form-control mb-3" id="noteImage" name="image"
+                    placeholder="https://example.com/imagen.jpg" />
+                </div>
+                <div class="form-group">
+                  <label for="noteDiff" class="form-label">Dificultad:</label>
+                  <label><input type="radio" value="1" id="noteDif1" name="diff" class="form-input" />1</label>
+                  <label><input type="radio" value="2" id="noteDif2" name="diff" class="form-input" />2</label>
+                  <label><input type="radio" value="3" id="noteDif3" name="diff" class="form-input" />3</label>
+                  <label><input checked type="radio" value="desconocida" id="noteDif" name="diff"
+                      class="form-input" />Desconocida</label>
+                </div>
 
-                  <div class="form-group">
-                    <label>
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="instrumentalCheck"
-                        name="instrum"
-                      />
-                      Tiene Instrumental</label
-                    >
-                  </div>
-                  <!-- si se marca que se abra un formulario para subir el mp3-->
+                <div class="form-group">
+                  <label>
+                    <input class="form-check-input" type="checkbox" id="instrumentalCheck" name="instrum" />
+                    Tiene Instrumental</label>
+                </div>
+                <!-- si se marca que se abra un formulario para subir el mp3-->
 
-                  <div class="row">
-                    <div class="col text-center">
-                      <div id="createNoteComments">
-                        <button class="btn btn-outline-primary mt-3">
-                          Crear Comentario
-                        </button>
-                      </div>
-                      <!--la caja de comentarios hacerla con un container d-flex de boostrap con el eje en columna para poner uno encima del otro-->
-                    </div>
-                  </div>
-
-                  <div class="dialog-actions">
-                    <div class="d-flex gap-2 justify-content-center mt-3">
-                      <a href="index.html" class="btn btn-danger"> Cancel </a>
-                      <button type="submit" class="btn btn-success">
-                        Save Note
+                <div class="row">
+                  <div class="col text-center">
+                    <div id="createNoteComments">
+                      <button class="btn btn-outline-primary mt-3">
+                        Crear Comentario
                       </button>
                     </div>
+                    <!--la caja de comentarios hacerla con un container d-flex de boostrap con el eje en columna para poner uno encima del otro-->
                   </div>
-                </form>
-              </div>
+                </div>
+
+                <div class="dialog-actions">
+                  <div class="d-flex gap-2 justify-content-center mt-3">
+                    <a href="index.html" class="btn btn-danger"> Cancel </a>
+                    <button type="submit" class="btn btn-success">
+                      Save Note
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer class="py-3 mt-auto">
-      <div class="container text-center">
-        <p class="mb-0">© 2025 Quick N0tS</p>
-      </div>
-    </footer>
-  </body>
+  <footer class="py-3 mt-auto">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 Quick N0tS</p>
+    </div>
+  </footer>
+</body>
+
 </html>

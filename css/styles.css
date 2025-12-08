@@ -84,6 +84,15 @@
   transform: translateY(-2px);
 }
 
+html, body {
+  height: 100%;
+}
+
+.mainContainer {
+  /* Ajusta 200px dependiendo del tamaño de tu header y footer */
+  overflow-y: auto;   /* Scroll SOLO dentro del container */
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
 
 body {
   font-family: Poppins, sans-serif;
@@ -101,6 +110,7 @@ header {
 }
 
 footer {
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
   background: var(--secondary-color);
   color: var(--base-color);
 }

@@ -89,10 +89,13 @@ html, body {
 }
 
 .mainContainer {
-  /* Ajusta 200px dependiendo del tamaño de tu header y footer */
-  overflow-y: auto;   /* Scroll SOLO dentro del container */
+  
+  overflow-y: auto;   /* Scroll dentro del container */
   overflow-x: hidden; /* Evita scroll horizontal */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.05) transparent;
 }
+
 
 body {
   font-family: Poppins, sans-serif;
